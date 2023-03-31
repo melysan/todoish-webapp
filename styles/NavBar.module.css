@@ -1,0 +1,30 @@
+.navbarContainer {
+    display: flex;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
+    background-color: black;
+}
+
+.navbarLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.navbarLinks a:first-child {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.navbarLinks :hover {
+    color: #f8fff2;
+}

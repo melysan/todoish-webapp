@@ -1,0 +1,264 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 7rem;
+  padding-bottom: 5rem;
+  min-height: 100vh;
+  background-color: #2D2A3E;
+  font-family: 'Helvetica', sans-serif;
+  color: #9A8FBC;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 65%;
+  min-height: 80vh;
+  background-color: white;
+  padding: 3rem;
+  box-shadow: 10px 10px #9A8FBC;
+
+}
+
+.container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  max-width: 65%;
+  min-height: 80vh;
+  background-color: rgb(255, 255, 255);
+  padding: 3rem;
+  box-shadow: 10px 10px #9A8FBC;
+
+}
+
+.form {
+  font-family: 'Helvetica', sans-serif;
+  color: #2D2A3E;
+  display: flex;
+  position: absolute;
+  bottom: 5%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  width: 80%;
+}
+
+.inputField {
+  box-sizing: border-box;
+  font-family: 'Helvetica', sans-serif;
+  color: #2D2A3E;
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid #9B8FBC;
+  padding: 1em;
+  background-color: white;
+  border-radius: 5px;
+  color: #9B8FBC;
+  transition: background-color 0.4s ease-in-out;
+  resize: none;
+}
+
+.inputField:focus {
+  background-color: #EEE9FF;
+  resize: none;
+}
+
+.inputField::placeholder {
+  color: #9B8FBC;
+
+}
+
+.homeButton {
+  background-color: #9B8FBC;
+  border: 1px solid transparent;
+  padding: 1rem;
+  color: #ffffff;
+  width: 100%;
+}
+
+.button {
+  background-color: transparent;
+  border: 1px solid #2D2A3E;
+  padding: 1rem;
+  color: #2D2A3E;
+  width: 100%;
+}
+
+.button:hover {
+  box-shadow: none;
+  background-color: #2D2A3E;
+  color: white;
+}
+
+.h1 {
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainTitle {
+  font-size: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tasks {
+  padding: 10px 40px;
+}
+
+.checkboxCont {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.checkboxCont input[type="checkbox"] {
+  margin-right: 1rem;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Helvetica', sans-serif;
+  color: #2D2A3E;
+  font-size: 1.5rem;
+  padding-bottom: 20px;
+}
+
+.list:hover {
+  color: #9B8FBC;
+}
+
+.back {
+  color: #2D2A3E;
+  padding-bottom: 2em;
+}
+
+.back:hover {
+  color: #9B8FBC;
+}
+
+
+.instruction {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: 'Roboto', sans-serif;
+  color: #2D2A3E;
+  font-size: 1.4rem;
+  padding-bottom: 20px;
+  line-height: 1.5;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-top: 8rem;
+  height: 250px;
+}
+
+.startButton {
+
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid #2D2A3E;
+  padding: 1rem;
+  color: #2D2A3E;
+  width: 100%;
+}
+
+.startButton:hover {
+  background-color: #2D2A3E;
+  border: 1px solid transparent;
+  color: #ffffff;
+  box-shadow: none;
+}
+
+.homeButton {
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #9B8FBC;
+  border: 1px solid #9B8FBC;
+  padding: 1rem;
+  color: white;
+  width: 100%;
+}
+
+.homeButton:hover {
+  background-color: #2D2A3E;
+  color: #ffffff;
+  box-shadow: none;
+}
+
+.checklist {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Roboto', sans-serif;
+  color: #2D2A3E;
+  font-size: 1rem;
+  padding-bottom: 20px;
+  line-height: 1.5;
+}
+
+.delete {
+  border: 1px solid #2D2A3E;
+  background-color: #EEE9FF;
+  width: 18px;
+  height: 18px;
+  color: #EEE9FF;
+}
+
+.delete:hover {
+  background-color: #2D2A3E;
+  color: #2D2A3E;
+}
+
+.li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  line-height: 2rem;
+}
+
+.taskTitle {
+  padding-left: 10px;
+}
+
+.scroll {
+  overflow: auto;
+  height: 310px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+}
+
+.scroll::-webkit-scrollbar {
+  width: 20px;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+  background: #9A8FBC;
+}
+
+.scroll::-webkit-scrollbar-track {
+  background: #EEE9FF;
+}
