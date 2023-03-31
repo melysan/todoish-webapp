@@ -3,8 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding-top: 7rem;
-  padding-bottom: 5rem;
+  padding-top: 5rem;
   min-height: 100vh;
   background-color: #2D2A3E;
   font-family: 'Helvetica', sans-serif;
@@ -17,8 +16,8 @@
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  max-width: 65%;
-  min-height: 80vh;
+  max-width: 100%;
+  min-height: 100vh;
   background-color: white;
   padding: 3rem;
   box-shadow: 10px 10px #9A8FBC;
@@ -30,8 +29,8 @@
   position: relative;
   flex-direction: column;
   width: 100%;
-  max-width: 65%;
-  min-height: 80vh;
+  max-width: 100%;
+  min-height: 100vh;
   background-color: rgb(255, 255, 255);
   padding: 3rem;
   box-shadow: 10px 10px #9A8FBC;
@@ -43,7 +42,7 @@
   color: #2D2A3E;
   display: flex;
   position: absolute;
-  bottom: 5%;
+  bottom: 20%;
   left: 0;
   right: 0;
   margin: auto;
@@ -51,6 +50,11 @@
   align-items: center;
   height: 100px;
   width: 80%;
+}
+
+.formCont {
+  background-color: #9B8FBC;
+  padding: 2em;
 }
 
 .inputField {
@@ -80,14 +84,14 @@
 
 .homeButton {
   background-color: #9B8FBC;
-  border: 1px solid transparent;
+  border: 1px solid white;
   padding: 1rem;
   color: #ffffff;
   width: 100%;
 }
 
 .button {
-  background-color: transparent;
+  background-color: white;
   border: 1px solid #2D2A3E;
   padding: 1rem;
   color: #2D2A3E;
@@ -179,7 +183,7 @@
   margin: auto;
   justify-content: space-between;
   align-items: center;
-  background-color: transparent;
+  background-color: white;
   border: 1px solid #2D2A3E;
   padding: 1rem;
   color: #2D2A3E;
@@ -188,7 +192,7 @@
 
 .startButton:hover {
   background-color: #2D2A3E;
-  border: 1px solid transparent;
+  border: 1px solid white;
   color: #ffffff;
   box-shadow: none;
 }

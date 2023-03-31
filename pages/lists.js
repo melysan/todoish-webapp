@@ -51,11 +51,10 @@ export default function Home({ lists }) {
                                             query: { title: list.title }
                                         }
                                     )}> <p>
-                                        {list.title} by {session.user.name}</p>
+                                        {list.title} </p>
                                 </div>
                             ))}
                         </div>
-
                         <form className={styles.form} onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", maxWidth: "400px" }}>
                             <input className={styles.inputField} type="text" placeholder="What's your list for?" value={title} onChange={(e) => setTitle(e.target.value)} />
                             <button className={styles.button} type="submit">Create a List</button>
