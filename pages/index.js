@@ -20,12 +20,15 @@ export default function Home() {
         <main className={styles.main}>
           <NavBar />
           <div className={styles.container} >
-            <h1 className={styles.mainTitle}>To Do List...ish.</h1> <br />
-            <div className={styles.buttonContainer}>
-              <button className={styles.homeButton} onClick={() => r.push('/profile')}>View Profile</button>
-              <button className={styles.startButton} onClick={() => r.push('/lists')}>To The Lists</button>
-            </div>
+            <div className={styles.center} >
 
+              <h1 className={styles.mainTitle}>To Do List...ish.</h1> <br />
+
+              <div className={styles.buttonContainer}>
+                <button className={styles.homeButton} onClick={() => r.push('/profile')}>View Profile</button>
+                <button className={styles.startButton} onClick={() => r.push('/lists')}>To The Lists</button>
+              </div>
+            </div>
           </div>
         </main>
       </>
@@ -42,10 +45,13 @@ export default function Home() {
       <main className={styles.main}>
         <NavBar />
         <div className={styles.container} >
-          <h1 className={styles.mainTitle}>To Do List...ish.</h1> <br />
-          <div className={styles.buttonContainer}>
-            <button className={styles.homeButton} onClick={() => r.push('/api/auth/signin')}>Login</button>
-            <button className={styles.startButton} onClick={() => r.push('/lists')}>Preview Lists</button>
+          <div className={styles.center} >
+
+            <h1 className={styles.mainTitle}>To Do List...ish.</h1> <br />
+            <div className={styles.buttonContainer}>
+              <button className={styles.homeButton} onClick={() => r.push('/api/auth/signin')}>Login</button>
+              <button className={styles.startButton} onClick={() => r.push('/lists')}>Preview Lists</button>
+            </div>
           </div>
 
         </div>

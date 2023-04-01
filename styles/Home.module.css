@@ -17,12 +17,12 @@
   flex-direction: column;
   width: 100%;
   max-width: 100%;
-  min-height: 100vh;
+  min-height: 40vh;
   background-color: white;
-  padding: 3rem;
-  box-shadow: 10px 10px #9A8FBC;
+  /* box-shadow: 10px 10px #9A8FBC; */
 
 }
+
 
 .container {
   display: flex;
@@ -84,7 +84,15 @@
 
 .homeButton {
   background-color: #9B8FBC;
-  border: 1px solid white;
+  border: 1px solid #9B8FBC;
+  padding: 1rem;
+  color: #ffffff;
+  width: 100%;
+}
+
+.homeButton:hover {
+  background-color: #2D2A3E;
+  border: 1px solid #9B8FBC;
   padding: 1rem;
   color: #ffffff;
   width: 100%;
@@ -133,49 +141,54 @@
   margin-right: 1rem;
 }
 
-.list {
+.rowList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.listStyle {
+  border: solid 2px #9A8FBC;
+  border-radius: 2px;
+  background-color: #000000;
+  width: 15em;
+  height: 15em;
+  margin: 5px;
+  font-family: sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: 'Helvetica', sans-serif;
-  color: #2D2A3E;
-  font-size: 1.5rem;
-  padding-bottom: 20px;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
 }
 
-.list:hover {
+.listStyle:hover {
   color: #9B8FBC;
 }
 
 .back {
-  color: #2D2A3E;
-  padding-bottom: 2em;
+  color: #9B8FBC;
+  background-color: black;
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .back:hover {
-  color: #9B8FBC;
-}
-
-
-.instruction {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  font-family: 'Roboto', sans-serif;
-  color: #2D2A3E;
-  font-size: 1.4rem;
-  padding-bottom: 20px;
-  line-height: 1.5;
+  color: white;
+  background-color: #9A8FBC;
 }
 
 .buttonContainer {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  padding-top: 8rem;
-  height: 250px;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .startButton {
@@ -193,23 +206,6 @@
 .startButton:hover {
   background-color: #2D2A3E;
   border: 1px solid white;
-  color: #ffffff;
-  box-shadow: none;
-}
-
-.homeButton {
-  margin: auto;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #9B8FBC;
-  border: 1px solid #9B8FBC;
-  padding: 1rem;
-  color: white;
-  width: 100%;
-}
-
-.homeButton:hover {
-  background-color: #2D2A3E;
   color: #ffffff;
   box-shadow: none;
 }
@@ -242,6 +238,10 @@
   display: flex;
   align-items: center;
   line-height: 2rem;
+  background-color: #000000;
+  border-radius: 10px;
+  margin: 1em;
+  padding: 1em;
 }
 
 .taskTitle {
@@ -250,13 +250,13 @@
 
 .scroll {
   overflow: auto;
-  height: 310px;
+  height: 300px;
   border: 1px solid #fff;
   border-radius: 10px;
 }
 
 .scroll::-webkit-scrollbar {
-  width: 20px;
+  width: 30px;
 }
 
 .scroll::-webkit-scrollbar-thumb {

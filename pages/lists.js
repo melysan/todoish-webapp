@@ -39,21 +39,23 @@ export default function Home({ lists }) {
                 <main className={styles.main}>
                     <NavBar />
                     <div className={styles.container} >
-                        <p className={styles.back} onClick={() => router.push('/')}>← Back to Home</p>
+                        <p className={styles.back} onClick={() => router.push('/')}>Home</p>
                         <h1 className={styles.h1}>Lists</h1>
                         <div className={styles.scroll}>
-                            {newLists.map((list) => (
-                                <div key={list.id}
-                                    className={styles.list}
-                                    onClick={() => router.push(
-                                        {
-                                            pathname: `/${list.id}`,
-                                            query: { title: list.title }
-                                        }
-                                    )}> <p>
-                                        {list.title} </p>
-                                </div>
-                            ))}
+                            <div className={styles.rowList}>
+                                {newLists.map((list) => (
+                                    <div key={list.id}
+                                        className={styles.listStyle}
+                                        onClick={() => router.push(
+                                            {
+                                                pathname: `/${list.id}`,
+                                                query: { title: list.title }
+                                            }
+                                        )}> <p>
+                                            {list.title} </p>
+                                    </div>
+                                ))}
+                            </div>
                         </div>
                         <form className={styles.form} onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", maxWidth: "400px" }}>
                             <input className={styles.inputField} type="text" placeholder="What's your list for?" value={title} onChange={(e) => setTitle(e.target.value)} />
@@ -75,21 +77,23 @@ export default function Home({ lists }) {
             <main className={styles.main}>
                 <NavBar />
                 <div className={styles.container} >
-                    <p className={styles.back} onClick={() => router.push('/')}>← Back to Home</p>
+                    <p className={styles.back} onClick={() => router.push('/')}>Home</p>
                     <h1 className={styles.h1}>Lists</h1>
                     <div className={styles.scroll}>
-                        {newLists.map((list) => (
-                            <div key={list.id}
-                                className={styles.list}
-                                onClick={() => router.push(
-                                    {
-                                        pathname: `/${list.id}`,
-                                        query: { title: list.title }
-                                    }
-                                )}> <p>
-                                    {list.title}</p>
-                            </div>
-                        ))}
+                        <div className={styles.rowList}>
+                            {newLists.map((list) => (
+                                <div key={list.id}
+                                    className={styles.listStyle}
+                                    onClick={() => router.push(
+                                        {
+                                            pathname: `/${list.id}`,
+                                            query: { title: list.title }
+                                        }
+                                    )}> <p>
+                                        {list.title}</p>
+                                </div>
+                            ))}
+                        </div>
                     </div>
 
 

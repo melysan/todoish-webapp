@@ -50,17 +50,20 @@ export default function Page({ tasks, listsid }) {
                 <main className={styles.main}>
                     <NavBar />
                     <div className={styles.container} >
-                        <p className={styles.back} onClick={handleBack}>← Back to Lists</p>
+                        <p className={styles.back} onClick={handleBack}>Lists</p>
+
+
                         <h1 className={styles.h1}>{title}</h1>
                         <ul className={styles.scroll}>
-                            {tasksList.map((task) => (
-                                <li className={styles.li} key={task.id}>
-                                    <button className={styles.delete} onClick={() => handleDeleteTask(task.id)}></button><br />
-                                    <label className={styles.taskTitle}>{task.title}</label>
-                                </li>
-                            ))}
+                            <div className={styles.center} >
+                                {tasksList.map((task) => (
+                                    <li className={styles.li} key={task.id}>
+                                        <button className={styles.delete} onClick={() => handleDeleteTask(task.id)}></button><br />
+                                        <label className={styles.taskTitle}>{task.title}</label>
+                                    </li>
+                                ))}
+                            </div>
                         </ul>
-
                         <form className={styles.form} onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", maxWidth: "400px" }}>
                             <input className={styles.inputField} type="text" placeholder="What's your task?" value={newTaskTitle} onChange={(e) => setNewTaskTitle(e.target.value)} />
                             <button className={styles.button} type="submit">Create a Task</button>
@@ -81,7 +84,7 @@ export default function Page({ tasks, listsid }) {
             <main className={styles.main}>
                 <NavBar />
                 <div className={styles.container} >
-                    <p className={styles.back} onClick={handleBack}>← Back to Lists</p>
+                    <p className={styles.back} onClick={handleBack}>Lists</p>
                     <h1 className={styles.h1}>Please log in to view tasks.</h1>
 
                 </div>
